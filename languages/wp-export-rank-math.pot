@@ -1,0 +1,166 @@
+# Copyright (C) 2024 Pedro Villalobos
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Export Rank Math 1.0.10\n"
+"Report-Msgid-Bugs-To: https://github.com/pedrovillalobos/wp-export-rank-math\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Pedro Villalobos <https://villalobos.com.br>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wp-export-rank-math.php:45
+msgid "Export Rank Math Data"
+msgstr ""
+
+#: wp-export-rank-math.php:46
+msgid "Export Rank Math"
+msgstr ""
+
+#: wp-export-rank-math.php:67
+msgid "Exporting..."
+msgstr ""
+
+#: wp-export-rank-math.php:68
+msgid "Export complete!"
+msgstr ""
+
+#: wp-export-rank-math.php:69
+msgid "Export failed. Please try again."
+msgstr ""
+
+#: wp-export-rank-math.php:82
+msgid "Export Settings"
+msgstr ""
+
+#: wp-export-rank-math.php:87
+msgid "Post Type"
+msgstr ""
+
+#: wp-export-rank-math.php:90
+msgid "Posts"
+msgstr ""
+
+#: wp-export-rank-math.php:91
+msgid "Pages"
+msgstr ""
+
+#: wp-export-rank-math.php:92
+msgid "All Post Types"
+msgstr ""
+
+#: wp-export-rank-math.php:97
+msgid "Post Status"
+msgstr ""
+
+#: wp-export-rank-math.php:100
+msgid "Published"
+msgstr ""
+
+#: wp-export-rank-math.php:101
+msgid "Draft"
+msgstr ""
+
+#: wp-export-rank-math.php:102
+msgid "Pending Review"
+msgstr ""
+
+#: wp-export-rank-math.php:103
+msgid "All Statuses"
+msgstr ""
+
+#: wp-export-rank-math.php:108
+msgid "Date From"
+msgstr ""
+
+#: wp-export-rank-math.php:115
+msgid "Date To"
+msgstr ""
+
+#: wp-export-rank-math.php:123
+msgid "Export to CSV"
+msgstr ""
+
+#: wp-export-rank-math.php:130
+msgid "Export Information"
+msgstr ""
+
+#: wp-export-rank-math.php:131
+msgid "This export will include the following data:"
+msgstr ""
+
+#: wp-export-rank-math.php:133
+msgid "Post Title"
+msgstr ""
+
+#: wp-export-rank-math.php:134
+msgid "Post URL"
+msgstr ""
+
+#: wp-export-rank-math.php:135
+msgid "Author"
+msgstr ""
+
+#: wp-export-rank-math.php:136
+msgid "Status (Published, Draft, etc.)"
+msgstr ""
+
+#: wp-export-rank-math.php:137
+msgid "Last Edit Date"
+msgstr ""
+
+#: wp-export-rank-math.php:138
+msgid "Categories"
+msgstr ""
+
+#: wp-export-rank-math.php:139
+msgid "Rank Math Score"
+msgstr ""
+
+#: wp-export-rank-math.php:140
+msgid "Rank Math Main Keyword"
+msgstr ""
+
+#: wp-export-rank-math.php:141
+msgid "Rank Math Additional Keywords"
+msgstr ""
+
+#: wp-export-rank-math.php:142
+msgid "Rank Math Structured Data Type"
+msgstr ""
+
+#: wp-export-rank-math.php:143
+msgid "Rank Math Internal Links"
+msgstr ""
+
+#: wp-export-rank-math.php:144
+msgid "Rank Math External Links"
+msgstr ""
+
+#: wp-export-rank-math.php:145
+msgid "Rank Math Incoming Links"
+msgstr ""
+
+#: wp-export-rank-math.php:155
+msgid "Security check failed."
+msgstr ""
+
+#: wp-export-rank-math.php:160
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: wp-export-rank-math.php:170
+msgid "Failed to generate CSV data."
+msgstr ""
+
+msgid "Debug Rank Math Data"
+msgstr ""
+
+msgid "Click to see what Rank Math data is available for a sample post"
+msgstr ""
+
+msgid "If you don't choose a start and end date, it'll default to export everything."
+msgstr ""

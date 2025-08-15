@@ -1,0 +1,168 @@
+/* WP Export Rank Math Admin Styles */
+
+.wperm-container {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.wperm-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wperm-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #23282d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wperm-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.wperm-card li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.wperm-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+#wperm-export-form .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+}
+
+#wperm-export-form .form-table td {
+    padding: 15px 10px;
+}
+
+#wperm-export-form select,
+#wperm-export-form input[type="date"] {
+    width: 250px;
+    max-width: 100%;
+}
+
+/* Button styling */
+#wperm-export-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    height: auto;
+    line-height: 1.4;
+}
+
+#wperm-export-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Spinner styling */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.spinner.is-active {
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Message styling */
+.wperm-message {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border-left: 4px solid;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wperm-message.notice-success {
+    border-left-color: #46b450;
+}
+
+.wperm-message.notice-error {
+    border-left-color: #dc3232;
+}
+
+.wperm-message p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 782px) {
+    .wperm-container {
+        margin: 10px 0;
+    }
+
+    .wperm-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    #wperm-export-form .form-table th,
+    #wperm-export-form .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #wperm-export-form .form-table th {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+
+    #wperm-export-form select,
+    #wperm-export-form input[type="date"] {
+        width: 100%;
+    }
+}
+
+/* Loading state */
+.wperm-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Success animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wperm-message {
+    animation: fadeInUp 0.3s ease-out;
+}
