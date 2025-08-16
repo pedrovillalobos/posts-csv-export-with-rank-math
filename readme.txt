@@ -1,4 +1,4 @@
-=== WP Export Rank Math ===
+=== Posts CSV Export with Rank Math ===
 Contributors: pedrovillalobos
 Tags: rank-math, seo, export, csv, analytics
 Requires at least: 5.0
@@ -12,7 +12,7 @@ Export WordPress posts with Rank Math SEO data to CSV format including scores, k
 
 == Description ==
 
-WP Export Rank Math is a comprehensive export solution for WordPress sites using the Rank Math SEO plugin. This plugin allows you to export all essential Rank Math SEO data including scores, keywords, structured data, and link information to CSV format for analysis and reporting.
+Posts CSV Export with Rank Math is a comprehensive export solution for WordPress sites using the Rank Math SEO plugin. This plugin allows you to export all essential Rank Math SEO data including scores, keywords, structured data, and link information to CSV format for analysis and reporting.
 
 = Key Features =
 
@@ -47,9 +47,9 @@ This plugin is designed to work with various versions of Rank Math SEO and inclu
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/wp-export-rank-math/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/posts-csv-export-rank-math/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Use the Tools->Export Rank Math screen to configure and export your data
+3. Use the Tools->Posts CSV Export with Rank Math screen to configure and export your data
 
 == Frequently Asked Questions ==
 

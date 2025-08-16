@@ -1,9 +1,9 @@
-# WP Export Rank Math
+# Posts CSV Export with Rank Math
 
 A WordPress plugin to export post information with Rank Math SEO data to CSV format. This plugin provides a comprehensive export solution for WordPress sites using Rank Math SEO plugin.
 
 **Author:** [Pedro Villalobos](https://villalobos.com.br)
-**GitHub:** [https://github.com/pedrovillalobos/wp-export-rank-math](https://github.com/pedrovillalobos/wp-export-rank-math)
+**GitHub:** [https://github.com/pedrovillalobos/posts-csv-export-rank-math](https://github.com/pedrovillalobos/posts-csv-export-rank-math)
 
 ## Features
 
@@ -33,13 +33,13 @@ A WordPress plugin to export post information with Rank Math SEO data to CSV for
 
 ## Installation
 
-1. **Download the plugin files** to your WordPress site's `/wp-content/plugins/wp-export-rank-math/` directory
+1. **Download the plugin files** to your WordPress site's `/wp-content/plugins/posts-csv-export-rank-math/` directory
 2. **Activate the plugin** through the 'Plugins' menu in WordPress
-3. **Access the export tool** via Tools > Export Rank Math in your WordPress admin
+3. **Access the export tool** via Tools > Posts CSV Export with Rank Math in your WordPress admin
 
 ## Usage
 
-1. Navigate to **Tools > Export Rank Math** in your WordPress admin
+1. Navigate to **Tools > Posts CSV Export with Rank Math** in your WordPress admin
 2. Configure your export settings:
    - **Post Type**: Choose between Posts, Pages, or All Post Types
    - **Post Status**: Filter by Published, Draft, Pending Review, or All Statuses
@@ -81,8 +81,8 @@ This plugin is designed to work with various versions of Rank Math SEO and inclu
 ## File Structure
 
 ```
-wp-export-rank-math/
-├── wp-export-rank-math.php      # Main plugin file
+posts-csv-export-rank-math/
+├── posts-csv-export-rank-math.php      # Main plugin file
 ├── assets/
 │   ├── js/
 │   │   └── admin.js            # Admin JavaScript
@@ -149,7 +149,7 @@ The plugin includes CSS classes that can be customized:
 
 ## Support
 
-For support, feature requests, or bug reports, please create an issue on the [GitHub repository](https://github.com/pedrovillalobos/wp-export-rank-math).
+For support, feature requests, or bug reports, please create an issue on the [GitHub repository](https://github.com/pedrovillalobos/posts-csv-export-rank-math).
 
 ## Author
 
