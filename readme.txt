@@ -4,7 +4,7 @@ Tags: rank-math, seo, export, csv, analytics
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,6 +83,13 @@ The plugin exports data in CSV format, which can be opened in Excel, Google Shee
 3. Export information and data fields list
 
 == Changelog ==
+
+= 1.0.14 =
+* Fixed text domain mismatch for WordPress.org compliance
+* Updated all 47 text domain references from posts-csv-export-rank-math to posts-csv-export-with-rank-math
+* Renamed language files to match new text domain
+* Updated GitHub URLs in documentation
+* Fixed internationalization compliance issues
 
 = 1.0.13 =
 * Removed deprecated load_plugin_textdomain() call (WordPress 4.6+)
