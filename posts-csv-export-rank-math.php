@@ -3,7 +3,7 @@
  * Plugin Name: Posts CSV Export with Rank Math
  * Plugin URI: https://github.com/pedrovillalobos/posts-csv-export-with-rank-math
  * Description: Export WordPress posts with Rank Math SEO data to CSV format including scores, keywords, structured data, and link information.
- * Version: 1.0.13
+ * Version: 1.0.14
  * Author: Pedro Villalobos
  * Author URI: https://villalobos.com.br
  * License: GPL v3 or later
@@ -21,7 +21,7 @@ if (!defined('ABSPATH')) {
 
 // Define plugin constants only if not already defined
 if (!defined('PCERM_VERSION')) {
-    define('PCERM_VERSION', '1.0.13');
+    define('PCERM_VERSION', '1.0.14');
 }
 if (!defined('PCERM_PLUGIN_URL')) {
     define('PCERM_PLUGIN_URL', plugin_dir_url(__FILE__));
