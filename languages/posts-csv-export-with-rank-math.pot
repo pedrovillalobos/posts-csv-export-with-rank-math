@@ -1,169 +1,166 @@
-# Brazilian Portuguese translation for Posts CSV Export with Rank Math
 # Copyright (C) 2024 Pedro Villalobos
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Posts CSV Export with Rank Math 1.0.13\n"
-"Report-Msgid-Bugs-To: https://github.com/pedrovillalobos/posts-csv-export-rank-math\n"
+"Report-Msgid-Bugs-To: https://github.com/pedrovillalobos/posts-csv-export-with-rank-math\n"
 "POT-Creation-Date: 2024-01-01 00:00+0000\n"
-"PO-Revision-Date: 2024-01-01 00:00+0000\n"
-"Last-Translator: Pedro Villalobos <https://villalobos.com.br>\n"
-"Language-Team: Portuguese (Brazil) <https://villalobos.com.br>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Pedro Villalobos <https://villalobos.com.br>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: posts-csv-export-rank-math.php:45
 msgid "Export Rank Math Data"
-msgstr "Exporte Posts em CSV com o Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:46
 msgid "Export Rank Math"
-msgstr "Exporte Posts em CSV com o Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:67
 msgid "Exporting..."
-msgstr "Exportando..."
+msgstr ""
 
 #: posts-csv-export-rank-math.php:68
 msgid "Export complete!"
-msgstr "Exportação concluída!"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:69
 msgid "Export failed. Please try again."
-msgstr "Exportação falhou. Tente novamente."
+msgstr ""
 
 #: posts-csv-export-rank-math.php:82
 msgid "Export Settings"
-msgstr "Configurações de Exportação"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:87
 msgid "Post Type"
-msgstr "Tipo de Post"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:90
 msgid "Posts"
-msgstr "Posts"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:91
 msgid "Pages"
-msgstr "Páginas"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:92
 msgid "All Post Types"
-msgstr "Todos os Tipos de Post"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:97
 msgid "Post Status"
-msgstr "Status do Post"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:100
 msgid "Published"
-msgstr "Publicado"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:101
 msgid "Draft"
-msgstr "Rascunho"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:102
 msgid "Pending Review"
-msgstr "Aguardando Revisão"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:103
 msgid "All Statuses"
-msgstr "Todos os Status"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:108
 msgid "Date From"
-msgstr "Data De"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:115
 msgid "Date To"
-msgstr "Data Até"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:123
 msgid "Export to CSV"
-msgstr "Exportar para CSV"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:130
 msgid "Export Information"
-msgstr "Informações da Exportação"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:131
 msgid "This export will include the following data:"
-msgstr "Esta exportação incluirá os seguintes dados:"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:133
 msgid "Post Title"
-msgstr "Título do Post"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:134
 msgid "Post URL"
-msgstr "URL do Post"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:135
 msgid "Author"
-msgstr "Autor"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:136
 msgid "Status (Published, Draft, etc.)"
-msgstr "Status (Publicado, Rascunho, etc.)"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:137
 msgid "Last Edit Date"
-msgstr "Data da Última Edição"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:138
 msgid "Categories"
-msgstr "Categorias"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:139
 msgid "Rank Math Score"
-msgstr "Pontuação do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:140
 msgid "Rank Math Main Keyword"
-msgstr "Palavra-chave Principal do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:141
 msgid "Rank Math Additional Keywords"
-msgstr "Palavras-chave Adicionais do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:142
 msgid "Rank Math Structured Data Type"
-msgstr "Tipo de Dados Estruturados do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:143
 msgid "Rank Math Internal Links"
-msgstr "Links Internos do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:144
 msgid "Rank Math External Links"
-msgstr "Links Externos do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:145
 msgid "Rank Math Incoming Links"
-msgstr "Links de Entrada do Rank Math"
+msgstr ""
 
 #: posts-csv-export-rank-math.php:155
 msgid "Security check failed."
-msgstr "Verificação de segurança falhou."
+msgstr ""
 
 #: posts-csv-export-rank-math.php:160
 msgid "You do not have permission to perform this action."
-msgstr "Você não tem permissão para executar esta ação."
+msgstr ""
 
 #: posts-csv-export-rank-math.php:170
 msgid "Failed to generate CSV data."
-msgstr "Falha ao gerar dados CSV."
+msgstr ""
 
 msgid "Debug Rank Math Data"
-msgstr "Depurar Dados do Rank Math"
+msgstr ""
 
 msgid "Click to see what Rank Math data is available for a sample post"
-msgstr "Clique para ver quais dados do Rank Math estão disponíveis para um post de exemplo"
+msgstr ""
 
 msgid "If you don't choose a start and end date, it'll default to export everything."
-msgstr "Se você não escolher uma data de início e fim, exportará tudo por padrão."
+msgstr ""

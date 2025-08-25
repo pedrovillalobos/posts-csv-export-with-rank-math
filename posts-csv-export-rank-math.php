@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Posts CSV Export with Rank Math
- * Plugin URI: https://github.com/pedrovillalobos/posts-csv-export-rank-math
+ * Plugin URI: https://github.com/pedrovillalobos/posts-csv-export-with-rank-math
  * Description: Export WordPress posts with Rank Math SEO data to CSV format including scores, keywords, structured data, and link information.
  * Version: 1.0.13
  * Author: Pedro Villalobos
@@ -10,7 +10,7 @@
  * Requires at least: 5.0
  * Tested up to: 6.8
  * Requires PHP: 7.4
- * Text Domain: posts-csv-export-rank-math
+ * Text Domain: posts-csv-export-with-rank-math
  * Domain Path: /languages
  */
 
@@ -81,10 +81,10 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
      */
     public function add_admin_menu() {
         add_management_page(
-            __('Export Rank Math Data', 'posts-csv-export-rank-math'),
-            __('Export Rank Math', 'posts-csv-export-rank-math'),
+            __('Export Rank Math Data', 'posts-csv-export-with-rank-math'),
+            __('Export Rank Math', 'posts-csv-export-with-rank-math'),
             'manage_options',
-            'posts-csv-export-rank-math',
+            'posts-csv-export-with-rank-math',
             array($this, 'admin_page')
         );
     }
@@ -99,7 +99,7 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
      * @param string $hook The current admin page hook.
      */
     public function enqueue_admin_scripts($hook) {
-        if ($hook !== 'tools_page_posts-csv-export-rank-math') {
+        if ($hook !== 'tools_page_posts-csv-export-with-rank-math') {
             return;
         }
         
@@ -115,9 +115,9 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('wperm_export_nonce'),
             'strings' => array(
-                'exporting' => __('Exporting...', 'posts-csv-export-rank-math'),
-                'export_complete' => __('Export complete!', 'posts-csv-export-rank-math'),
-                'export_error' => __('Export failed. Please try again.', 'posts-csv-export-rank-math')
+                'exporting' => __('Exporting...', 'posts-csv-export-with-rank-math'),
+                'export_complete' => __('Export complete!', 'posts-csv-export-with-rank-math'),
+                'export_error' => __('Export failed. Please try again.', 'posts-csv-export-with-rank-math')
             )
         ));
         
@@ -139,45 +139,45 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
     public function admin_page() {
         ?>
         <div class="wrap">
-            <h1><?php echo esc_html__('Export Rank Math Data', 'posts-csv-export-rank-math'); ?></h1>
+            <h1><?php echo esc_html__('Export Rank Math Data', 'posts-csv-export-with-rank-math'); ?></h1>
             
             <div class="wperm-container">
                 <div class="wperm-card">
-                    <h2><?php echo esc_html__('Export Settings', 'posts-csv-export-rank-math'); ?></h2>
+                    <h2><?php echo esc_html__('Export Settings', 'posts-csv-export-with-rank-math'); ?></h2>
                     
                     <form id="wperm-export-form">
                         <div class="notice notice-info" style="margin-bottom: 20px;">
-                            <p><?php echo esc_html__('If you don\'t choose a start and end date, it\'ll default to export everything.', 'posts-csv-export-rank-math'); ?></p>
+                            <p><?php echo esc_html__('If you don\'t choose a start and end date, it\'ll default to export everything.', 'posts-csv-export-with-rank-math'); ?></p>
                         </div>
                         <table class="form-table">
                             <tr>
                                 <th scope="row">
-                                    <label for="post_type"><?php echo esc_html__('Post Type', 'posts-csv-export-rank-math'); ?></label>
+                                    <label for="post_type"><?php echo esc_html__('Post Type', 'posts-csv-export-with-rank-math'); ?></label>
                                 </th>
                                 <td>
                                     <select name="post_type" id="post_type">
-                                        <option value="post"><?php echo esc_html__('Posts', 'posts-csv-export-rank-math'); ?></option>
-                                        <option value="page"><?php echo esc_html__('Pages', 'posts-csv-export-rank-math'); ?></option>
-                                        <option value="all"><?php echo esc_html__('All Post Types', 'posts-csv-export-rank-math'); ?></option>
+                                        <option value="post"><?php echo esc_html__('Posts', 'posts-csv-export-with-rank-math'); ?></option>
+                                        <option value="page"><?php echo esc_html__('Pages', 'posts-csv-export-with-rank-math'); ?></option>
+                                        <option value="all"><?php echo esc_html__('All Post Types', 'posts-csv-export-with-rank-math'); ?></option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <label for="post_status"><?php echo esc_html__('Post Status', 'posts-csv-export-rank-math'); ?></label>
+                                    <label for="post_status"><?php echo esc_html__('Post Status', 'posts-csv-export-with-rank-math'); ?></label>
                                 </th>
                                 <td>
                                     <select name="post_status" id="post_status">
-                                        <option value="publish"><?php echo esc_html__('Published', 'posts-csv-export-rank-math'); ?></option>
-                                        <option value="draft"><?php echo esc_html__('Draft', 'posts-csv-export-rank-math'); ?></option>
-                                        <option value="pending"><?php echo esc_html__('Pending Review', 'posts-csv-export-rank-math'); ?></option>
-                                        <option value="all"><?php echo esc_html__('All Statuses', 'posts-csv-export-rank-math'); ?></option>
+                                        <option value="publish"><?php echo esc_html__('Published', 'posts-csv-export-with-rank-math'); ?></option>
+                                        <option value="draft"><?php echo esc_html__('Draft', 'posts-csv-export-with-rank-math'); ?></option>
+                                        <option value="pending"><?php echo esc_html__('Pending Review', 'posts-csv-export-with-rank-math'); ?></option>
+                                        <option value="all"><?php echo esc_html__('All Statuses', 'posts-csv-export-with-rank-math'); ?></option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <label for="date_from"><?php echo esc_html__('Date From', 'posts-csv-export-rank-math'); ?></label>
+                                    <label for="date_from"><?php echo esc_html__('Date From', 'posts-csv-export-with-rank-math'); ?></label>
                                 </th>
                                 <td>
                                     <input type="date" name="date_from" id="date_from" />
@@ -185,7 +185,7 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <label for="date_to"><?php echo esc_html__('Date To', 'posts-csv-export-rank-math'); ?></label>
+                                    <label for="date_to"><?php echo esc_html__('Date To', 'posts-csv-export-with-rank-math'); ?></label>
                                 </th>
                                 <td>
                                     <input type="date" name="date_to" id="date_to" />
@@ -195,39 +195,39 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
                         
                         <p class="submit">
                             <button type="submit" class="button button-primary" id="wperm-export-btn">
-                                <?php echo esc_html__('Export to CSV', 'posts-csv-export-rank-math'); ?>
+                                <?php echo esc_html__('Export to CSV', 'posts-csv-export-with-rank-math'); ?>
                             </button>
                             <span class="spinner" style="float: none; margin-left: 10px;"></span>
                         </p>
                         
                         <p>
                             <button type="button" class="button button-secondary" id="wperm-debug-btn">
-                                <?php echo esc_html__('Debug Rank Math Data', 'posts-csv-export-rank-math'); ?>
+                                <?php echo esc_html__('Debug Rank Math Data', 'posts-csv-export-with-rank-math'); ?>
                             </button>
                             <small style="margin-left: 10px; color: #666;">
-                                <?php echo esc_html__('Click to see what Rank Math data is available for a sample post', 'posts-csv-export-rank-math'); ?>
+                                <?php echo esc_html__('Click to see what Rank Math data is available for a sample post', 'posts-csv-export-with-rank-math'); ?>
                             </small>
                         </p>
                     </form>
                 </div>
                 
                 <div class="wperm-card">
-                    <h2><?php echo esc_html__('Export Information', 'posts-csv-export-rank-math'); ?></h2>
-                    <p><?php echo esc_html__('This export will include the following data:', 'posts-csv-export-rank-math'); ?></p>
+                    <h2><?php echo esc_html__('Export Information', 'posts-csv-export-with-rank-math'); ?></h2>
+                    <p><?php echo esc_html__('This export will include the following data:', 'posts-csv-export-with-rank-math'); ?></p>
                     <ul>
-                        <li><?php echo esc_html__('Post Title', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Post URL', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Author', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Status (Published, Draft, etc.)', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Last Edit Date', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Categories', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math Score', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math Main Keyword', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math Additional Keywords', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math Structured Data Type', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math Internal Links', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math External Links', 'posts-csv-export-rank-math'); ?></li>
-                        <li><?php echo esc_html__('Rank Math Incoming Links', 'posts-csv-export-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Post Title', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Post URL', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Author', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Status (Published, Draft, etc.)', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Last Edit Date', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Categories', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math Score', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math Main Keyword', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math Additional Keywords', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math Structured Data Type', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math Internal Links', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math External Links', 'posts-csv-export-with-rank-math'); ?></li>
+                        <li><?php echo esc_html__('Rank Math Incoming Links', 'posts-csv-export-with-rank-math'); ?></li>
                     </ul>
                 </div>
             </div>
@@ -246,12 +246,12 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
     public function handle_export_csv() {
         // Verify nonce
         if (!isset($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'wperm_export_nonce')) {
-            wp_die(esc_html__('Security check failed.', 'posts-csv-export-rank-math'));
+            wp_die(esc_html__('Security check failed.', 'posts-csv-export-with-rank-math'));
         }
         
         // Check permissions
         if (!current_user_can('manage_options')) {
-            wp_die(esc_html__('You do not have permission to perform this action.', 'posts-csv-export-rank-math'));
+            wp_die(esc_html__('You do not have permission to perform this action.', 'posts-csv-export-with-rank-math'));
         }
         
         // Get export parameters with proper sanitization and validation
@@ -263,29 +263,29 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
         // Validate post type
         $allowed_post_types = array('post', 'page', 'all');
         if (!in_array($post_type, $allowed_post_types)) {
-            wp_send_json_error(esc_html__('Invalid post type specified.', 'posts-csv-export-rank-math'));
+            wp_send_json_error(esc_html__('Invalid post type specified.', 'posts-csv-export-with-rank-math'));
         }
         
         // Validate post status
         $allowed_post_statuses = array('publish', 'draft', 'pending', 'all');
         if (!in_array($post_status, $allowed_post_statuses)) {
-            wp_send_json_error(esc_html__('Invalid post status specified.', 'posts-csv-export-rank-math'));
+            wp_send_json_error(esc_html__('Invalid post status specified.', 'posts-csv-export-with-rank-math'));
         }
         
         // Validate date format
         if (!empty($date_from) && !preg_match('/^\d{4}-\d{2}-\d{2}$/', $date_from)) {
-            wp_send_json_error(esc_html__('Invalid date format for "Date From".', 'posts-csv-export-rank-math'));
+            wp_send_json_error(esc_html__('Invalid date format for "Date From".', 'posts-csv-export-with-rank-math'));
         }
         
         if (!empty($date_to) && !preg_match('/^\d{4}-\d{2}-\d{2}$/', $date_to)) {
-            wp_send_json_error(esc_html__('Invalid date format for "Date To".', 'posts-csv-export-rank-math'));
+            wp_send_json_error(esc_html__('Invalid date format for "Date To".', 'posts-csv-export-with-rank-math'));
         }
         
         // Generate CSV
         $csv_data = $this->generate_csv_data($post_type, $post_status, $date_from, $date_to);
         
         if ($csv_data === false) {
-            wp_send_json_error(esc_html__('Failed to generate CSV data.', 'posts-csv-export-rank-math'));
+            wp_send_json_error(esc_html__('Failed to generate CSV data.', 'posts-csv-export-with-rank-math'));
         }
         
         // Set headers for file download
@@ -308,12 +308,12 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
     public function handle_debug_data() {
         // Verify nonce
         if (!isset($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'wperm_export_nonce')) {
-            wp_die(esc_html__('Security check failed.', 'posts-csv-export-rank-math'));
+            wp_die(esc_html__('Security check failed.', 'posts-csv-export-with-rank-math'));
         }
         
         // Check permissions
         if (!current_user_can('manage_options')) {
-            wp_die(esc_html__('You do not have permission to perform this action.', 'posts-csv-export-rank-math'));
+            wp_die(esc_html__('You do not have permission to perform this action.', 'posts-csv-export-with-rank-math'));
         }
         
         // Get a sample post to debug
@@ -324,7 +324,7 @@ if (!class_exists('Posts_CSV_Export_Rank_Math')) {
         ));
         
         if (empty($posts)) {
-            wp_send_json_error(esc_html__('No posts found to debug.', 'posts-csv-export-rank-math'));
+            wp_send_json_error(esc_html__('No posts found to debug.', 'posts-csv-export-with-rank-math'));
         }
         
         $post = $posts[0];

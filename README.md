@@ -3,7 +3,7 @@
 A WordPress plugin to export post information with Rank Math SEO data to CSV format. This plugin provides a comprehensive export solution for WordPress sites using Rank Math SEO plugin.
 
 **Author:** [Pedro Villalobos](https://villalobos.com.br)
-**GitHub:** [https://github.com/pedrovillalobos/posts-csv-export-rank-math](https://github.com/pedrovillalobos/posts-csv-export-rank-math)
+**GitHub:** [https://github.com/pedrovillalobos/posts-csv-export-with-rank-math](https://github.com/pedrovillalobos/posts-csv-export-with-rank-math)
 
 ## Features
 
@@ -33,7 +33,7 @@ A WordPress plugin to export post information with Rank Math SEO data to CSV for
 
 ## Installation
 
-1. **Download the plugin files** to your WordPress site's `/wp-content/plugins/posts-csv-export-rank-math/` directory
+1. **Download the plugin files** to your WordPress site's `/wp-content/plugins/posts-csv-export-with-rank-math/` directory
 2. **Activate the plugin** through the 'Plugins' menu in WordPress
 3. **Access the export tool** via Tools > Posts CSV Export with Rank Math in your WordPress admin
 
@@ -81,7 +81,7 @@ This plugin is designed to work with various versions of Rank Math SEO and inclu
 ## File Structure
 
 ```
-posts-csv-export-rank-math/
+posts-csv-export-with-rank-math/
 ├── posts-csv-export-rank-math.php      # Main plugin file
 ├── assets/
 │   ├── js/
@@ -149,7 +149,7 @@ The plugin includes CSS classes that can be customized:
 
 ## Support
 
-For support, feature requests, or bug reports, please create an issue on the [GitHub repository](https://github.com/pedrovillalobos/posts-csv-export-rank-math).
+For support, feature requests, or bug reports, please create an issue on the [GitHub repository](https://github.com/pedrovillalobos/posts-csv-export-with-rank-math).
 
 ## Author
 
